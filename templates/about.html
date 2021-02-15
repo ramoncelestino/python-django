@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>About</h1>
+	<p>This is about page template</p>
+{% endblock %}
+
+{% block another %}
+<h1>Another block</h1>
+
+<p>{{ my_text }}, {{ my_age }}</p>
+
+<ul>
+{% for my_sub_item in my_list %}
+	{% if my_sub_item == "Brazil" %}
+		<li>{{ my_sub_item }} campeão</li>
+	{% else %}
+		<li>{{ my_sub_item }}</li>
+	{% endif %}
+{% endfor %}
+</ul>
+
+
+
+{% endblock %}
+
+
+<!--Context -->
